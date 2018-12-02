@@ -33,7 +33,9 @@ The goals / steps of this project are the following:
 [image17]: ./images/14.jpg "Stop"
 [image18]: ./images/12.jpg "Priority road"
 [image19]: images/sign_pred.jpg "Sign prediction"
+
 ---
+
 ### Data Set Summary & Exploration
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
