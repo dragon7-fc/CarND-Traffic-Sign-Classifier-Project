@@ -131,7 +131,7 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-My model, modified from LaNet, contains 3 convolution layer and 3 fully connected layer. Lost function is cross entropy. Used the Adam as optimizer with following hyperparameters.
+My model, modified from LeNet, contains 3 convolution layer and 3 fully connected layer. Lost function is cross entropy. Used the Adam as optimizer with following hyperparameters.
 ```
 EPOCH = 50
 BATCH_SIZE = 128
@@ -151,9 +151,9 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
-    - I used LaNet as my baseline CNN architecture, because in the LaNet lab I found its validation accuracy is 99% in MNIST dataset.
+    - I used LeNet as my baseline CNN architecture, because in the LeNet lab I found its validation accuracy is 99% in MNIST dataset.
 * What were some problems with the initial architecture?
-    - In LaNet CNN, its first layer input shape is (32x32x1), which means data are grayscale. If we want to use its architecture, we first need to convert our data to gray.
+    - In LeNet CNN, its first layer input shape is (32x32x1), which means data are grayscale. If we want to use its architecture, we first need to convert our data to gray.
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
     - To improve the performance, I first add 3rd convolution layer with RELU activation and max pooling to detect more detail things. Then added dropout to every fully connected layer to drop tiny neuron. Finally, in order to prevent overfitting, I added L2 regularizer to every fully connected layer.
 * Which parameters were tuned? How were they adjusted and why?
